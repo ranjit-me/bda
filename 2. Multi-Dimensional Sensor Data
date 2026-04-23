@@ -1,0 +1,5 @@
+data <- array(1:24, dim=c(3,4,2))  # zones, time, metrics
+
+temp <- data[,,1]
+
+mean(temp[,1])   # mean temperature of zone 1
