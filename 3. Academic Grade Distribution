@@ -1,0 +1,5 @@
+grades <- sample(c("A","B","C","D","F"), 50, replace=TRUE)
+
+freq <- table(grades)
+
+pie(freq, col=rainbow(5))
