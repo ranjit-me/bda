@@ -1,0 +1,13 @@
+df <- data.frame(
+  ID=1:5,
+  Name=c("A","B","C","D","E"),
+  Dept=c("IT","HR","IT","Sales","IT"),
+  Salary=c(50000,40000,60000,45000,70000)
+)
+
+it_emp <- df[df$Dept=="IT", ]
+
+it_emp <- it_emp[order(it_emp$Name), ]
+
+library(reshape2)
+melt(it_emp)
