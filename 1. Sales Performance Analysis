@@ -1,0 +1,11 @@
+branch1 <- c(200, 250, 300, 280, 260, 310, 290)
+branch2 <- c(180, 220, 270, 260, 240, 300, 280)
+
+sum(branch1); mean(branch1)
+sum(branch2); mean(branch2)
+
+data <- rbind(branch1, branch2)
+
+barplot(data, beside=TRUE,
+        col=c("blue", "red"),
+        names.arg=c("Mon","Tue","Wed","Thu","Fri","Sat","Sun"))
