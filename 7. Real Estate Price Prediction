@@ -1,0 +1,7 @@
+size <- c(1000, 1500, 2000, 2500, 3000)
+price <- c(50, 70, 90, 110, 130)
+
+model <- lm(price ~ size)
+
+plot(size, price)
+abline(model, col="red")
