@@ -1,0 +1,4 @@
+pop <- rnorm(100, mean=50000, sd=10000)
+
+hist(pop, prob=TRUE, col="lightblue")
+lines(density(pop), col="red")
