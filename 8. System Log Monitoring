@@ -1,0 +1,13 @@
+set.seed(1)
+
+cpu <- sample(0:100, 50, replace=TRUE)
+
+for(i in seq(10, length(cpu), by=10)) {
+  avg <- mean(cpu[1:i])
+  print(avg)
+
+  if(any(cpu[1:i] > 95)) {
+    print("ALERT: CPU > 95%")
+    break
+  }
+}
